@@ -8,7 +8,7 @@ jobs:
     trigger: true
   - put: docker-image
     params:
-      build: git-concourse-build-docker-image/ci
+      build: git-concourse-build-docker-image/
 
 resources:
 - name: git-concourse-build-docker-image
@@ -20,7 +20,7 @@ resources:
 - name: docker-image
   type: docker-image
   source:
-    email: kondurupurandhar@gmail.com
-    username: kondurupurandhar@gmail.com
+    email: https://hub.docker.com
+    username: purandhar
     password: password-1
-    repository: https://hub.docker.com/purandhar
+    repository: purandhar/aqua
